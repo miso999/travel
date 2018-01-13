@@ -545,6 +545,7 @@ a {
   margin-left: auto;
   margin-right: auto;
 
+
 }
 
 .wrapper--medium {
@@ -581,6 +582,19 @@ a {
 .page-section--blue {
     background-color: #2f5572;
     color: #FFF;
+  }
+
+.page-section--testimonials {
+
+    background: #e0e6ef;
+  }
+
+@media (min-width: 800px) {
+
+.page-section--testimonials {
+     background: url("/assets/images/testimonials-bg.jpg") top center;
+     background-size: cover
+  }
   }
 
 .headline {
@@ -647,6 +661,21 @@ a {
     display: table;
   }
 
+.row--t-padding {
+    padding-top: 80px;
+  }
+
+.row--no-b-margin {
+    margin-bottom:-80px;
+  }
+
+@media (min-width: 530px) {
+
+.row--no-b-margin {
+      margin-bottom: 0
+  }
+  }
+
 .row--gutters {
     margin-right: -65px;
   }
@@ -696,6 +725,24 @@ a {
     }
   }
 
+/* Equal height rules */
+
+@media (min-width: 800px) {
+
+.row--equal-height {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+}
+  }
+
+.row--equal-height > div {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
 .generic-content-container p {
     font-weight: 300;
     line-height: 1.65;
@@ -719,6 +766,10 @@ a {
     text-align: center;
 }
 
+.section-title--blue {
+        color: #2f5572;
+    }
+
 @media (min-width: 530px) {
 
 .section-title {
@@ -737,6 +788,8 @@ a {
 @media (min-width: 530px) {
 
 .section-title__icon {
+            position: relative;
+            top: 8px;
             margin-right: .5rem;
             margin-left: 0;
             margin-bottom: 0;
@@ -782,4 +835,46 @@ a {
      font-size: 1.875rem;
      margin-top:.1em
   }
+  }
+
+.testimonial-item {
+  background-color: rgba(255, 255, 255, .8);
+  padding:0 18px 1px 18px;
+  margin-bottom: 98px;
+}
+
+@media (min-width: 800px) {
+
+.testimonial-item {
+    padding:0 1.8125rem 1px 1.8125rem;
+    margin-bottom: 0
+}
+  }
+
+.testimonial-item__photo {
+    border-radius: 80px;
+    overflow: hidden;
+    width:160px;
+    height:160px;
+    margin: 0 auto -80px auto;
+    border: 6px solid rgba(255, 255, 255, .8);
+    position: relative;
+    top: -80px;
+  }
+
+.testimonial-item__title {
+    color: #2f5572;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+
+  }
+
+.testimonial-item__subtitle {
+    color: #d59541;
+    text-align: center;
+    font-size: 15px;
+    font-weight:400;
+    margin: .25rem 0 1rem 0;
   }
